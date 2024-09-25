@@ -117,7 +117,7 @@ class MyCustomFormState extends State<MyCustomForm> {
           labelText: 'Password',
           border: OutlineInputBorder(),
           suffixIcon: IconButton(
-            icon: Icon(Icons.visibility), 
+            icon: visibility ? Icon(Icons.visibility) :  Icon(Icons.visibility_off) , 
             onPressed: () { 
               setState(() {
                 visibility = !visibility;
